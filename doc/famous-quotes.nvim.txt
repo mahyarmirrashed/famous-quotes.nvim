@@ -3,37 +3,37 @@
 ==============================================================================
 Table of Contents                       *famous-quotes.nvim-table-of-contents*
 
-1. famous-quotes                            |famous-quotes.nvim-famous-quotes|
-  - Features                       |famous-quotes.nvim-famous-quotes-features|
-  - Requirements               |famous-quotes.nvim-famous-quotes-requirements|
-  - Installation               |famous-quotes.nvim-famous-quotes-installation|
-  - Usage                             |famous-quotes.nvim-famous-quotes-usage|
-  - Credits                         |famous-quotes.nvim-famous-quotes-credits|
-  - License                         |famous-quotes.nvim-famous-quotes-license|
+1. famous-quotes.nvim                  |famous-quotes.nvim-famous-quotes.nvim|
+  - Features                  |famous-quotes.nvim-famous-quotes.nvim-features|
+  - Requirements          |famous-quotes.nvim-famous-quotes.nvim-requirements|
+  - Installation          |famous-quotes.nvim-famous-quotes.nvim-installation|
+  - Usage                        |famous-quotes.nvim-famous-quotes.nvim-usage|
+  - Credits                    |famous-quotes.nvim-famous-quotes.nvim-credits|
+  - License                    |famous-quotes.nvim-famous-quotes.nvim-license|
 2. Links                                            |famous-quotes.nvim-links|
 
 ==============================================================================
-1. famous-quotes                            *famous-quotes.nvim-famous-quotes*
+1. famous-quotes.nvim                  *famous-quotes.nvim-famous-quotes.nvim*
 
 A Neovim plugin that provides random famous quotes from a bundled CSV file.
 Quotes are shuffled using the Fisher-Yates algorithm and cached for
 performance.
 
 
-FEATURES                           *famous-quotes.nvim-famous-quotes-features*
+FEATURES                      *famous-quotes.nvim-famous-quotes.nvim-features*
 
 - No dependencies: everything is self-contained so no unnecessary internet API calls!
 - Supports fetching one quote, multiple quotes, or all the quotes.
 - Caches quotes to avoid repeated file I/O.
 
 
-REQUIREMENTS                   *famous-quotes.nvim-famous-quotes-requirements*
+REQUIREMENTS              *famous-quotes.nvim-famous-quotes.nvim-requirements*
 
 - Neovim 0.5.0 or later (this was when Lua was introduced).
 - Lua support (included in Neovim by default).
 
 
-INSTALLATION                   *famous-quotes.nvim-famous-quotes-installation*
+INSTALLATION              *famous-quotes.nvim-famous-quotes.nvim-installation*
 
 Install using your preferred Neovim package manager.
 
@@ -52,7 +52,7 @@ USING VIM-PLUG ~
 <
 
 
-USAGE                                 *famous-quotes.nvim-famous-quotes-usage*
+USAGE                            *famous-quotes.nvim-famous-quotes.nvim-usage*
 
 The plugin provides a single function, `get_quote(count)`, to retrieve random
 quotes.
@@ -90,14 +90,14 @@ SETUP()
 - No-op function provided for compatibility. No configuration needed.
 
 
-CREDITS                             *famous-quotes.nvim-famous-quotes-credits*
+CREDITS                        *famous-quotes.nvim-famous-quotes.nvim-credits*
 
 Thanks to @JakubPetriska for the CSV of quotes
 <https://gist.github.com/JakubPetriska/060958fd744ca34f099e947cd080b540> used
 in this plugin.
 
 
-LICENSE                             *famous-quotes.nvim-famous-quotes-license*
+LICENSE                        *famous-quotes.nvim-famous-quotes.nvim-license*
 
 MIT License <./LICENSE>
 
