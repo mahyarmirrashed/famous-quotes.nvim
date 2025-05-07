@@ -2,6 +2,9 @@ local M = {}
 
 local cache = nil
 
+-- Seed the RNG
+math.randomseed(os.time())
+
 -- Fisher-Yates shuffle algorithm: https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
 local function shuffle(array)
   local n = #array
