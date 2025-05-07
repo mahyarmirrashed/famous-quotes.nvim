@@ -1,5 +1,6 @@
 local M = {}
-local quotes_cache = nil
+
+local cache = nil
 
 -- Fisher-Yates shuffle algorithm: https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
 local function shuffle(array)
@@ -12,29 +13,33 @@ local function shuffle(array)
 end
 
 local function load_quotes()
-  if quotes_cache then return quotes_cache end
+  if cache then return cache end
 
-  local script_dir = vim.fn.expand("<sfile>:p:h")
-  local csv_file = script_dir .. "/quotes.csv"
+  local csv_path = vim.api.nvim_get_runtime_file("lua/quotes.csv", false)[1]
+  if not csv_path then error("Could not find quotes.csv") end
 
-  if vim.fn.filereadable(csv_file) == 0 then error("Quotes CSV file not found at " .. csv_file) end
+  local file = io.open(csv_path, "r")
+  if not file then error("Failed to open: " .. csv_path) end
+
+  _ = file:read("*line") -- Skip header row
 
   local quotes = {}
-  local file = io.open(csv_file, "r")
-  if not file then error("Failed to open quotes CSV file") end
-
-  _ = file:read("*line")
 
   for line in file:lines() do
     local author, quote = line:match('"(.-)","(.-)"')
     if author and quote then
-      author = author == "" and "Anonymous" or author
-      table.insert(quotes, { author = author, quote = quote })
+      table.insert(quotes, {
+        author = author == "" and "Anonymous" or author,
+        quote = quote,
+      })
     end
   end
+
   file:close()
 
-  quotes_cache = quotes
+  -- Store in cache and return
+  cache = quotes
+
   return quotes
 end
 
