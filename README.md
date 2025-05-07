@@ -1,4 +1,4 @@
-# famous-quotes
+# famous-quotes.nvim
 
 A Neovim plugin that provides random famous quotes from a bundled CSV file. Quotes are shuffled using the Fisher-Yates algorithm and cached for performance.
 
