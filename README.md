@@ -4,7 +4,7 @@ A Neovim plugin that provides random famous quotes from a bundled CSV file. Quot
 
 ## Features
 
-- No dependencies!
+- No dependencies: everything is self-contained so no unnecessary internet API calls!
 - Supports fetching one quote, multiple quotes, or all the quotes.
 - Caches quotes to avoid repeated file I/O.
 
