@@ -1,4 +1,4 @@
-*famous-quotes.nvim.txt*          For Neovim          Last change: 2025 May 07
+*famous-quotes.nvim.txt*          For Neovim         Last change: 2025 June 16
 
 ==============================================================================
 Table of Contents                       *famous-quotes.nvim-table-of-contents*
@@ -22,15 +22,15 @@ performance.
 
 FEATURES                      *famous-quotes.nvim-famous-quotes.nvim-features*
 
-- No dependencies: everything is self-contained so no unnecessary internet API calls!
-- Supports fetching one quote, multiple quotes, or all the quotes.
-- Caches quotes to avoid repeated file I/O.
+- No dependencies: everything is self-contained so no unnecessary internet API calls
+- Supports fetching one quote, multiple quotes, or all the quotes
+- Caches quotes to avoid repeated file I/O
 
 
 REQUIREMENTS              *famous-quotes.nvim-famous-quotes.nvim-requirements*
 
-- Neovim 0.5.0 or later (this was when Lua was introduced).
-- Lua support (included in Neovim by default).
+- Neovim 0.5.0 or later (this was when Lua was introduced)
+- Lua support (included in Neovim by default)
 
 
 INSTALLATION              *famous-quotes.nvim-famous-quotes.nvim-installation*
@@ -81,13 +81,13 @@ FUNCTION DOCUMENTATION ~
 
 GET_QUOTE(COUNT?)
 
-- **count** (optional, number): Number of quotes to retrieve. Defaults to 1. Use `-1` to get all quotes.
-- **Returns**A table of quote objects, each with `author` and `quote` fields.
+- **count** (optional, number): Number of quotes to retrieve. Defaults to 1. Use `-1` to get all quotes
+- **Returns**A table of quote objects, each with `author` and `quote` fields
 
 
 SETUP()
 
-- No-op function provided for compatibility. No configuration needed.
+- No-op function provided for compatibility. No configuration needed
 
 
 CREDITS                        *famous-quotes.nvim-famous-quotes.nvim-credits*
