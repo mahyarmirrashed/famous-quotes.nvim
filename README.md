@@ -4,14 +4,14 @@ A Neovim plugin that provides random famous quotes from a bundled CSV file. Quot
 
 ## Features
 
-- No dependencies: everything is self-contained so no unnecessary internet API calls!
-- Supports fetching one quote, multiple quotes, or all the quotes.
-- Caches quotes to avoid repeated file I/O.
+- No dependencies: everything is self-contained so no unnecessary internet API calls
+- Supports fetching one quote, multiple quotes, or all the quotes
+- Caches quotes to avoid repeated file I/O
 
 ## Requirements
 
-- Neovim 0.5.0 or later (this was when Lua was introduced).
-- Lua support (included in Neovim by default).
+- Neovim 0.5.0 or later (this was when Lua was introduced)
+- Lua support (included in Neovim by default)
 
 ## Installation
 
@@ -54,12 +54,12 @@ local all_quotes = require('famous-quotes').get_quote(-1)
 
 #### `get_quote(count?)`
 
-- **count** (optional, number): Number of quotes to retrieve. Defaults to 1. Use `-1` to get all quotes.
-- **Returns**: A table of quote objects, each with `author` and `quote` fields.
+- **count** (optional, number): Number of quotes to retrieve. Defaults to 1. Use `-1` to get all quotes
+- **Returns**: A table of quote objects, each with `author` and `quote` fields
 
 #### `setup()`
 
-- No-op function provided for compatibility. No configuration needed.
+- No-op function provided for compatibility. No configuration needed
 
 ## Credits
 
