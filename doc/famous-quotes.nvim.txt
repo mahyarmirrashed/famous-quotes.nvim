@@ -52,6 +52,18 @@ USING VIM-PLUG ~
 <
 
 
+USING LAZY.NVIM ~
+
+>lua
+    {
+      "mahyarmirrashed/famous-quotes.nvim",
+      config = function()
+        require("famous-quotes").setup()
+      end,
+    }
+<
+
+
 USAGE                            *famous-quotes.nvim-famous-quotes.nvim-usage*
 
 The plugin provides a single function, `get_quote(count)`, to retrieve random
