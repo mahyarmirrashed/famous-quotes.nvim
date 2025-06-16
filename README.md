@@ -29,6 +29,17 @@ use 'mahyarmirrashed/famous-quotes'
 Plug 'mahyarmirrashed/famous-quotes'
 ```
 
+### Using [lazy.nvim](https://github.com/folke/lazy.nvim)
+
+```lua
+{
+  "mahyarmirrashed/famous-quotes.nvim",
+  config = function()
+    require("famous-quotes").setup()
+  end,
+}
+```
+
 ## Usage
 
 The plugin provides a single function, `get_quote(count)`, to retrieve random quotes.
