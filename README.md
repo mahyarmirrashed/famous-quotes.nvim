@@ -10,8 +10,7 @@ A Neovim plugin that provides random famous quotes from a bundled CSV file. Quot
 
 ## Requirements
 
-- Neovim 0.5.0 or later (this was when Lua was introduced)
-- Lua support (included in Neovim by default)
+- Neovim 0.5.0 or later
 
 ## Installation
 
