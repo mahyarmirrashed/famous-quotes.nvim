@@ -19,13 +19,13 @@ Install using your preferred Neovim package manager.
 ### Using [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
 ```lua
-use 'mahyarmirrashed/famous-quotes'
+use 'mahyarmirrashed/famous-quotes.nvim'
 ```
 
 ### Using [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```vim
-Plug 'mahyarmirrashed/famous-quotes'
+Plug 'mahyarmirrashed/famous-quotes.nvim'
 ```
 
 ### Using [lazy.nvim](https://github.com/folke/lazy.nvim)
